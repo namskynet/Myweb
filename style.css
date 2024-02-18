@@ -164,8 +164,8 @@ button:hover{
 
 .planet1{
     position: absolute;
-    right: 15%;
     z-index: 0;
+    margin-left: 700px;
 }
 
 .textabout{
@@ -189,7 +189,7 @@ button:hover{
     position: absolute;
     z-index: 10;
     top: 400px;
-    left: 30px
+    left: 50px
 }
 
 .planet2{
