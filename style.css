@@ -136,6 +136,11 @@ button{
     background-color: ;
 }
 
+.logo{
+    width: 200px;
+}
+
+
 button:hover{
     transform: scale(1.1);
     transition: transform 0.2s;
@@ -147,12 +152,24 @@ button:hover{
     font-size: 100px;
     color: aliceblue;
     margin-bottom: 100px;
+    
 }
 
+.nameandbutton{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planet1{
+    position: absolute;
+    right: 15%;
+    z-index: 0;
+}
 
 .textabout{
 
-    gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +181,38 @@ button:hover{
     background-image: url(img/bgMAIN.png);
 }
 
+.planet{
+    animation-name: moveplanet;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    left: 30px
+}
 
+.planet2{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    animation-name: movingplanet2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes movingplanet2 {
+
+    from{transform: translateY(0px);}
+    to{transform: translateY(-80px);}
+}
+
+
+@keyframes moveplanet {
+    from{transform: translateY(200px) scale(1.2);}
+    to{transform: translateY(0px)}
+}
 
 .page2{
     background-image: url(img/bgABOUT.png);
@@ -187,6 +235,7 @@ button:hover{
 
 
 .text{
+   z-index:2;
    width: 849px;
    height: 223px;
    background-image: url(img/form1.png); 
