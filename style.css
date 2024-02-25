@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
     font-family: monospace;
+    letter-spacing: -1px;
 }
 
 .parts{
@@ -57,8 +58,8 @@ header{
 }
 
 
-.aboutmetext button{
-    width: 150px;
+.aboutmetext a{
+    width: 130px;
     margin-left: 30px;
 }
 
@@ -108,6 +109,7 @@ a:hover{
 
 
 a{
+    
     font-size: 25px;
     background-color: aliceblue;
     border-radius: 20px;
@@ -235,6 +237,135 @@ button:hover{
     color:aliceblue;
 }
 
+.secondpic{
+    background-image: url(img/card.png);
+    width: 204px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.secondtextcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 170px;
+}
+
+.firstcomm p{
+    width: 250px;
+}
+
+.page5main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: scale(1.2);
+}
+
+.page5title{
+    position:absolute;
+    top: 150px;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px black;
+    color:aliceblue;
+}
+
+.secondcomm p{
+    width: 250px;
+}
+
+.secondcomm{
+    background-image: url(img/comment.png);
+    width: 327px;
+    height: 161px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: ;
+}
+
+.firstcomm{
+    background-image: url(img/comment.png);
+    width: 327px;
+    height: 161px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: ;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #200153;
+    color: aliceblue;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.leftside{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.rightside a{
+    padding: 0;
+    background-color: none;
+    transform: scale(1.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstpic{
+    background-image: url(img/card.png);
+    width: 204px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.firsttextcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .works{
     display: flex;
     gap: 20px;
@@ -313,6 +444,7 @@ button:hover{
 .page5{
     background-image: url(img/bgCOMMENTS.png);
 }
+
 
 
 .text{
