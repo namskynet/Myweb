@@ -148,7 +148,12 @@ button:hover{
     cursor: pointer;
 }
 
+
+
 .aboutmetitle{
+    font-weight: bold;
+    text-shadow: 7px 7px black;
+    color:aliceblue;
     font-size: 100px;
     color: aliceblue;
     margin-bottom: 100px;
@@ -168,12 +173,88 @@ button:hover{
     margin-left: 700px;
 }
 
+.skillimg{
+    display: flex;
+    justify-content: center;
+}
+
+.titleskill{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px black;
+    color:aliceblue;
+}
+
+.skillsmain p{
+    width: 500px;
+}
+
+.skillplanet{
+    position:absolute;
+    left: 0;
+    bottom: 20px;
+}
+.partskill{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skillsmain{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 640px;
+    height: 409px;
+    background-image: url(img/form3.png);
+    font-size: 25px;
+    text-align: center;
+}
+
 .textabout{
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.projtext{
+    position:absolute;
+    top: 150px;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 5px black;
+    color:aliceblue;
+}
+
+.works{
+    display: flex;
+    gap: 20px;
+}
+
+.works img{
+    width: 500px;
+}
+
+.page4main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.works {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .page1{
