@@ -4,6 +4,12 @@
     border: 0;
     font-family: monospace;
     letter-spacing: -1px;
+    scroll-behavior: smooth;
+    scrollbar-color: black;
+}
+
+.active{
+    color: blueviolet;
 }
 
 .parts{
