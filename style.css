@@ -9,11 +9,7 @@
 }
 
 
-@media (max-width: 1000px) {
-    header{
-        display: none;
-    }
-}
+
 
 
 
@@ -44,15 +40,17 @@
 
 header{
     background-image: url(img/c209e077df2bee140edbfbc57370cf31.jpg);
-    display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-    gap: 40px;
     padding: 20px;
     z-index: 5;
     position: fixed;
     border-radius: 0 0 20px 20px;
 
+}
+
+.menupage{
+    margin-left: 10px;
 }
 
 .insideabout p{
@@ -244,8 +242,7 @@ button:hover{
 }
 
 .projtext{
-    position:absolute;
-    top: 150px;
+    margin-top: 150px;
     font-size: 60px;
     font-weight: bold;
     text-shadow: 5px 5px black;
@@ -283,11 +280,13 @@ button:hover{
     align-items: center;
     gap: 30px;
     transform: scale(1.2);
+    object-fit: contain;
+
 }
 
 .page5title{
-    position:absolute;
-    top: 150px;
+    margin-top: 100px;
+    justify-self: flex-start;
     font-size: 60px;
     font-weight: bold;
     text-shadow: 5px 5px black;
@@ -399,13 +398,13 @@ footer{
 
 .works {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
 .page1{
     display: flex;
     background-image: url(img/bgMAIN.png);
+    background-size: cover;
 }
 
 .planet{
@@ -453,11 +452,20 @@ footer{
 }
 
 .page4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 150px;
     background-image: url(img/bgWORKS.png);
 }
 
 .page5{
+    justify-content: flex-start;
+    gap: 150px;
     background-image: url(img/bgCOMMENTS.png);
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -494,4 +502,48 @@ section{
     background-size: cover;
     min-height: 100vh;
     position: relative;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    header {
+        display: none;
+    }
+    .planet, .planet2 {
+        display: none;
+    }
+    .works{
+        flex-direction: column;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .works img{
+        margin: 20px 0;
+        width: 80%;
+    }
+    .page5main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        object-fit: contain;
+        position: relative;
+    }
+    .firstcomm{
+        background-image: url(img/comment-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 424px;
+        height: 90px;
+    }
+    .secondcomm{
+        background-image: url(img/comment-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 424px;
+        height: 90px;
+    }
 }
