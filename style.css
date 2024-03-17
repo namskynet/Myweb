@@ -6,6 +6,7 @@
     letter-spacing: -1px;
     scroll-behavior: smooth;
     scrollbar-color: black;
+
 }
 
 
@@ -504,14 +505,49 @@ section{
     position: relative;
 }
 
-
+.mobile_menu{
+    display: hide;
+}
 
 @media screen and (max-width: 1000px) {
-    header {
+
+    .menulinks{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: #200153;
+        min-height: 100vh;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        gap: 50px;
+        
+    }
+
+    .menupage{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 5px;
+        transform:scale(1.5) ;
+    }
+
+    .menupage:hover{
+        transform:scale(1.5) ;
+    }
+
+    .hidemenu{
         display: none;
     }
     .planet, .planet2 {
         display: none;
+    }
+    .planet1{
+        margin-right: 150px;
     }
     .works{
         flex-direction: column;
@@ -545,5 +581,19 @@ section{
         background-size: cover;
         width: 424px;
         height: 90px;
+    }
+    .page5{
+        height: 1500px;
+    }
+    .mobile_menu{
+        display: flex;
+        padding: 20px;
+    }
+    .wrapheader{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .off-scroll{
+        overflow: hidden;
     }
 }

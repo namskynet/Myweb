@@ -50,3 +50,39 @@ if (!newactiveBTN.classList.contains('active')) {
 //         }
 //     });
 // }
+
+
+document.querySelector(".mobile_menu").addEventListener("click", 
+function (event)
+{
+    document.querySelector(".menulinks").classList.toggle("hidemenu")
+}
+)
+
+
+
+addEventListener('click', function(event) {
+    let clickTarget = event.target;
+    let activeBtn = document.querySelector('.active');
+    if (clickTarget.classList.contains('menupage') ){
+       clickTarget.classList.add('active');
+       activeBtn.classList.remove('active');
+       
+       let mobile = document.querySelector('.menulinks');
+       if (!mobile.classList.contains('hidemenu')){
+           mobile.classList.add('hidemenu');
+       }
+    }
+    
+})
+
+
+let bodyselect = document.querySelector("body")
+let mobile = document.querySelector('.menulinks');
+
+if (!bodyselect.classList.contains("off-scroll") && !mobile.classList.contains('hidemenu')) {
+    bodyselect.classList.add('off-scroll')
+}
+else {
+    bodyselect.classList.remove('off-scroll')
+}
