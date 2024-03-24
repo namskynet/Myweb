@@ -19,16 +19,16 @@ window.onscroll = function() {
         classLink = '.mainpage';
     }
 
+    let activeBTN = document.querySelector('.active');
+    let newactiveBTN = document.querySelector(classLink);
+
+    if (!newactiveBTN.classList.contains('active')) {
+    newactiveBTN.classList.add('active')
+    activeBTN.classList.remove('active')
+    }
 
 };
 
-let activeBTN = document.querySelector('.active');
-let newactiveBTN = document.querySelector(classLink);
-
-if (!newactiveBTN.classList.contains('active')) {
-    newactiveBTN.classList.add('active')
-    activeBTN.classList.remove('active')
-}
 
 
 
