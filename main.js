@@ -4,19 +4,19 @@ window.onscroll = function() {
     let h = document.documentElement.clientHeight;
 
     if (window.scrollY >=h*4) {
-        classLink = '.mainpage';
+        classLink = '.comments';
     }
     else if (window.scrollY >=h*3) {
-        classLink = '.aboutme';
+        classLink = '.projects';
     }
     else if (window.scrollY >=h*2) {
         classLink = '.skills';
     }
     else if (window.scrollY >=h) {
-        classLink = '.projects';
+        classLink = '.aboutme';
     }
     else {
-        classLink = '.comments';
+        classLink = '.mainpage';
     }
 
 
