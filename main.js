@@ -5,26 +5,33 @@ window.onscroll = function() {
 
     if (window.scrollY >=h*4) {
         classLink = '.comments';
+        page = '.page5'
     }
     else if (window.scrollY >=h*3) {
-        classLink = '.projects';
+        classLink = '.projects'
+        page = '.page4'
     }
     else if (window.scrollY >=h*2) {
         classLink = '.skills';
+        page = '.page3'
     }
     else if (window.scrollY >=h) {
         classLink = '.aboutme';
+        page = '.page2'
     }
     else {
         classLink = '.mainpage';
+        page = '.page1'
     }
 
     let activeBTN = document.querySelector('.active');
     let newactiveBTN = document.querySelector(classLink);
 
+
     if (!newactiveBTN.classList.contains('active')) {
     newactiveBTN.classList.add('active')
     activeBTN.classList.remove('active')
+
     }
 
 };

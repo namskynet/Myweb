@@ -16,6 +16,7 @@
 
 .active{
     color: blueviolet;
+    font-size: 28px;
 }
 
 .parts{
@@ -505,6 +506,16 @@ section{
     position: relative;
 }
 
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from{transform: translateY(80px);}
+    to{transform: translateY(0px);}    
+}
+
 .mobile_menu{
     display: hide;
 }
@@ -597,3 +608,4 @@ section{
         overflow: hidden;
     }
 }
+
